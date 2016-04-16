@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Барбершоп-каталог</title>
+		<link rel="stylesheet" href="">
+	</head>
+	<body>
+	<!-- Header -->
+		<header class="main-menu">
+				<div class="container">
+					<nav>
+						  <ul>
+						  	<li><a href="#">ИНФОРМАЦИЯ</a></li>
+						  	<li><a href="#">НОВОСТИ</a></li>
+						  	<li><a href="#">ПРАЙС-ЛИСТ</a></li>
+						  	<li><a href="#">МАГАЗИН</a></li>
+						  	<li><a href="#">КОНТАКТЫ</a></li>
+						  </ul>	
+					</nav>
+					<div class="user">
+						<a class="login-btn" href="#">ВХОД</a>
+						<a href="#">dsada</a>
+					</div>
+				</div>
+		</header>
+	<!-- Header -->
+	<!-- content -->
+<main class="container">
+	<!-- second-nav -->
+	<div class="page-map"
+	<nav class="breadscrumbs">
+		<h1 class="shop-section">средства для ухода</h1>
+		<ul>
+			<li><a href="#">Главная</a></li>
+			<li><a href="#">Магазин</a></li>
+			<li><a href="#">Средства для ухода</a></li>
+		</ul>
+	</nav>
+	</div>
+	<!-- second-nav -->
+	<!-- filters-block -->
+	<aside class="filters-block">
+	
+	<div class="filters">
+	<!-- filter property-manafacture -->
+	<div class="manafacture-filter">
+		<h2 class="filter-title">производители:</h2>
+		<ul>
+			<li>
+				<input type="checkbox" id="filter-check-1">
+				<label for="filter-check-1">baxter of california</label>
+			</li>
+			<li>
+				<input type="checkbox" id="filter-check-2">
+				<label for="filter-check-2">mr natty</label>
+			</li>
+			<li>
+				<input type="checkbox" id="filter-check-3">
+				<label for="filter-check-3">suavecito</label>
+			</li>
+			<li>
+				<input type="checkbox" id="filter-check-4">
+				<label for="filter-check-4">malin+goetz</label>
+			</li>
+			<li>
+				<input type="checkbox" id="filter-check-5">
+				<label for="filter-check-5">myrray's</label>
+			</li>
+			<li>
+				<input type="checkbox" id="filter-check-6">
+				<label for="filter-check-6">american crew</label>
+			</li>
+		</ul>
+	</div>
+	<!-- filter property-manafacture -->
+	<!-- filter property-goods group -->
+	<div class="goods-groups">
+		<h2 class="filter-title">группы товаров:</h2>
+		<ul>
+			<li>
+				<input type="radio" id="radio-btn-1">
+				<label for="radio-btn-1" >Бритвенные принадлежности</label>
+			</li>
+			<li>
+				<input type="radio" id="radio-btn-3	">
+				<label for="radio-btn-3">Средства для ухода</label>
+			</li>
+			<li>
+				<input type="radio" id="radio-btn-3">
+				<label for="radio-btn-3">Акссесуары</label>
+			</li>
+		</ul>
+	</div>
+	<!-- filter property-goods group -->
+	<button type="btn" value="Показать"></button>
+	</div>
+	</aside>
+	<!-- filters-block -->
+	<!-- goods-list -->
+	<section class="goods">
+		<div class="goods-list">
+			<div class="goods-items">
+				<div class="list-item">
+					<img src="http://placehold.it/150x100" alt="Тут должен быть товар">
+					<div class="price-block">
+						2
+					</div>
+				</div>
+			
+			</div>
+			<div class="page-btns">
+				
+			</div>
+		</div>
+	</section>
+	<!-- goods-list -->
+</main>
+	
+
+
+
+
+<!-- content -->
+<!-- footer -->
+<footer class="main-footer">
+			<div class="container">
+				<div class="footer-contacts">
+					Барбершоп «Бородинский»<br>
+          Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+          <a href="#">Как нас найти?</a><br>
+          Телефон: +7 (812) 666-02-66
+				</div>
+				<div class="footer-social">
+					<p>Давайте дружить!</p>
+          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+				</div>
+				<div class="footer-copyright">
+					<p>Разработано:</p>
+          <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+				</div>
+			</div>
+		</footer>
+	<!-- footer -->
+
+</body>
+</html>
