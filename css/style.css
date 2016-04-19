@@ -3,28 +3,7 @@ body {
 	line-height: 24px;
 	color: #000000;
 	background: url("../img/barber-ground.jpg") no-repeat;
-	font-family: "PTSans NarrowBold", sans-serif;
-}
-.main-menu {
-	font-size: 16px;
-	line-height: 20px;
-}
-.features,
-.main-menu,
-.main-footer {
-	color: #ffffff;
-}
-.man-classic {
-	font-size: 48px;
-	line-height: 48px;
-}
-.active,
-.good-article {s
-	color: #aba9a7;
-}
-.
-a {
-	color: #ffffff;
+	font-family: "PT Sans NarrowBold", "Arial", sans-serif;
 }
 h1,
 h2,
@@ -35,6 +14,3 @@ b {
 h3 {
 	font-size: 24px;
 	line-height: 30px;
-}
-/* Что-то я запутался в шрифтах -_- подскажи как лучше будет сделать)все страницы
-   просмотрел всеравно никак толково прописать не получается */ 
