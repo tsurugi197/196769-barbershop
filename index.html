@@ -1,134 +1,170 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Барбершоп</title>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
-		<header class="main-menu">
-				<div class="container">
-					<nav class="navigation-group">
-						  <ul class="navigation-menu">
-						  	<li><a href="#">ИНФОРМАЦИЯ</a></li>
-						  	<li><a href="#">НОВОСТИ</a></li>
-						  	<li><a href="#">ПРАЙС-ЛИСТ</a></li>
-						  	<li><a href="#">МАГАЗИН</a></li>
-						  	<li><a href="#">КОНТАКТЫ</a></li>
-						  </ul>	
-					</nav>
-					<div class="user">
-						<a class="login-btn" href="#">ВХОД</a>
-					</div>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Barbershop</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="fonts/fa/css/font-awesome.min.css">
+</head>
+<body class="index-page">
+<!-- header -->
+	<header class="main-header">
+		<div class="container clearfix">
+			<nav class="main-navigation">
+				<ul class="main-menu">
+					<li><a href="#">информация</a></li>
+					<li><a href="#">новости</a></li>
+					<li><a href="#">прайс-лист</a></li>
+					<li><a href="#">магазин</a></li>
+					<li><a href="#">контакты</a></li>
+				</ul>
+			</nav>
+			<div class="user-block">
+				<a href="#" class="login-btn" onclick="showHide('hidden-form')">вход</a>
+			</div>
+		</div>
+	</header>
+	<!-- login-form -->
+	<div class="hidden-form" id="hidden-form">
+		<h2 class="login-title">личный кабинет</h2>
+		<span class="please-enter">введите пожалуйста свой логин и пароль</span>
+		<form class="login-form">
+			<input type="text" placeholder="логин"><div class="icon icon-user"></div>
+			<input type="password" placeholder="пароль"><div class="icon icon-lock"></div>
+			<div class="check-line">
+			<input type="checkbox" name="remember" id="remember">
+			<label for="remember" class="psev-box"></label>
+			<span class="remember-me">запомните меня</span>
+			<a href="#"><span class="forget">я забыл пароль!</span></a>
+			</div>
+			<input type="submit" class="form-button" value="войти">
+		</form>
+	</div>
+	<!-- login-form -->
+	<!-- header -->
+	<!-- index-content -->
+	<main class="index-main">
+		<div class="container clearfix">
+			<!-- index-logo -->
+			<div class="index-logo">
+				<img src="img/index-logo.png" alt="Borodynski-shop" width="368" height="204">
+			</div>
+			<!-- index-logo -->
+			<!-- features -->
+			<div class="features clearfix">
+				<div class="features-item">
+					<b>быстро</b>
+					<span class="quad"></span>
+					<p class="features-description">
+						мы делаем свою работу быстро! два часа пролетят незаметно и вы счастливый обладатель стильной стрижки-минутки!
+					</p>
 				</div>
-		</header>
-  <main class="container">
-  	<div class="main-logo">
-  		<img src="../img/BORODINSKI Logo.png" alt="vot" width="300" height="200">
-  	</div>
-    <div class="login-form">
-      <h2>личный кабинет</h2>
-      <p>введите пожалуйста свой логин и пароль</p>
-      <form>
-        <input type="text" placeholder="ЛОГИН">
-        <input type="password">
-        <input type="checkbox">
-        <div class="forget-pass">я забыл пароль!</div>
-        <a href="#" class="login-button">войти</a> 
-    </div>
-  	<section class="features">
-  		<div class="features-item">
-  			<b>БЫСТРО</b>
-  			<p>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладатель стильной стрижки-минутки!
-  			</p>
-  		</div>
-  		<div class="features-item">
-  			<b class="features-name">КРУТО</b>
-          <p>Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино! Во всяком случае внешне.</p>
-  		</div>
-  		<div class="features-item">
-  			<b>ДОРОГО</b>
-  			<p>Наши мастера — профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определенный статус?!
-  			</p>
-  		</div>
-  	</section>
-    <div class="map">
-      <!-- Map must be here -->
-    </div>
-  	<div class="main-content">
-  		<div class="content-section1">
-  			<h2 class="content-title">НОВОСТИ</h2>
-  			<ul>
-  				<li>
-  					<p>
-  						Нам наконец завезли Ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки
-  					</p>
-  					<time datetime="2016-01-11">11 января</time>
-  				</li>
-  				<li>
-  					<p>
-  						В нашей команде пополнение, Борис «Бритва» Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды
-  					</p>
-  					<time datetime="2016-01-18">18 января</time>
-  				</li>
-  			</ul>
-  			<a href="#" class="btn">ВСЕ НОВОСТИ</a>
-  		</div>
-  		<div class="content-section2">
-					<h2>ФОТОГАЛЕРЕЯ</h2> 
-					<div class="gallery">
-							<img src="../img/gallery.jpg" alt="" width="150" height="150">
-						<a href="#" class="btn gallery-prev">НАЗАД</a>
-						<a href="#" class="btn gallery-next">ВПЕРЕД</a>
+				<div class="features-item">
+					<b>круто</b>
+					<span class="quad"></span>
+					<p class="features-description">
+						забудьте как вы стриглись раньше. мы сделаем из вас звезду футбола или кино! во всяком случае внешне.
+					</p>
+				</div>
+				<div class="features-item">
+					<b>дорого</b>
+					<span class="quad"></span>
+					<p class="features-description">
+						наши мастера - профессионалы своего дела и не могут стоить дешево. к тому же, разве цена не дает определенный статус?
+					</p>
+				</div>
+			</div>
+			<!-- features -->
+			<!-- first content line -->
+				<div class="content-line clearfix">
+				<!-- News block -->
+					<div class="news">
+						<h2 class="news-title">новости</h2>
+						<ul class="news-list">
+							<li>
+								<p>нам наконец завезли ягермайстер! теперь вы можете пропустить стаканчик во время стрижки</p>
+								<time datetime="2016-01-11">11 января</time>
+							</li>
+							<li>
+								<p>в нашей команде пополнение, Борис «Бритва» Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды</p>
+								<time datetime="2016-01-18">18 января</time>
+							</li>
+						</ul>
+						<a class="btn" href="#">все новости</a>
 					</div>
-  		</div>
-  	</div>
-  	<div class="main-content">
-  		<div class="content-section1">
-  			<h2>КОНТАКТНАЯ ИНФОРМАЦИЯ</h2>
-  			<p>Барбершоп «Бородинский»<br>
+				<!-- News block -->
+				<!-- Gallery block -->
+					<div class="gallery ">
+						<h2 class="photo-title">фотогалерея</h2>
+						<div class="gallery-item">
+							<img src="img/gallery.jpg" alt="photo" width="285" height="165">
+						</div>
+						<div class="btn-pack">
+							<a href="#" class="btn">назад</a>
+							<a href="#" class="btn">вперед</a>
+						</div>
+					</div>
+				<!-- Gallery block -->
+				</div>
+			<!-- first content line -->
+			<!-- second content line -->
+			<div class="content-line clearfix">
+				<div class="contacts">
+					<h2 class="contacts-title">контактная информация</h2>
+					<p class="adress">Барбершоп «Бородинский»<br>
            Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
            Телефон: +7 (812) 666-02-66</p>
-         <p>
+          <p class="work-time">
            Время работы:<br>
            пн — пт: с 10:00 до 22:00<br>
            сб — вс: с 10:00 до 19:00
-         </p>
-         <a  class="btn" href="#">как проехать?</a>
-         <a href="#" class="btn">Обратная связь</a>
-  		</div>
-  		<div class="content-section2">
-  			<h2 class="content-title">записаться</h2>
-				<p>Укажите желаемую дату и время и мы свяжемся с вами для потдверждения брони</p>
-				<form>
-				<input type="text" placeholder="Дата">
-				<input type="text" placeholder="Время">
-				<input type="text" placeholder="Ваше имя">
-				<input type="tel" placeholder="Телефон">
-				<button class="btn" type="submit">Отправить</button>
-				</form>
-  		</div>
-  	</div>
-		<footer class="main-footer">
-			<div class="container">
-				<div class="footer-contacts">
-					Барбершоп «Бородинский»<br>
-          Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
-          <a href="#">Как нас найти?</a><br>
-          Телефон: +7 (812) 666-02-66
+          </p>
+					<div class="btn-pack">
+          	<a href="#" class="btn">как проехать</a>
+          	<a href="#" class="btn">обратная связь</a>
+          </div>
 				</div>
-				<div class="footer-social">
-					<p>Давайте дружить!</p>
-          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+				<div class="data-form">
+					<h2 class="data-form_title">записаться</h2>
+					<p class="form-instruction">укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
+					<form class="data-form_set">
+					<input type="text" placeholder="дата">
+					<input type="text" placeholder="время">
+					<input type="text" placeholder="ваше имя">
+					<input type="text" placeholder="телефон">
+					<input type="submit" value="отправить">
+					</form>
 				</div>
-				<div class="footer-copyright">
-					<p>Разработано:</p>
-          <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+			</div>	
+			<!-- second content line -->
+		</div>
+	</main>
+	<!-- index-content -->
+	<!-- footer -->
+	<footer class="main-footer">
+		<div class="container clearfix">
+			<section class="footer-contacts">
+				Барбершоп «Бородинский»<br>
+      	Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+      	<a href="#" class="how">Как нас найти?</a><br>
+      	Телефон: +7 (812) 666-02-66
+			</section>
+			<section class="footer-social">
+				<div class="text-center">давайте дружить!</div>
+				<a href="#" class="social-btn social-vk"><i class="fa fa-vk-5">&#xf189;</i></a>
+				<a href="#" class="social-btn social-fc"><i class="fa fa-tw-5">&#xf099;</i></a>
+				<a href="#" class="social-btn social-tw"><i class="fa fa-inst-5">&#xf16d;</i></a>
+			</section>
+			<section class="footer-copyright">
+				<div class="text-center">разработано:</div>
+				<div class="html-ac">
+					<a href="#" class="btn">htmlacademy.ru</a>
 				</div>
-			</div>
-		</footer>
-  </main>  
-  </body>
+			</section>
+		</div>
+	</footer>
+	<!-- footer -->
+	<script type="text/javascript" src="js/javascript.js"></script>
+</body>
 </html>
