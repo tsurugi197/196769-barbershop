@@ -62,11 +62,12 @@ b {
 	line-height: 70px;
 	font-size: 16px;
 	text-align: center;
-	padding-left: 15px;
-	padding-right: 15px;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-family: 'PT Sans Narrow',"Arial", sans-serif;
 }
 .main-menu li:first-child {
-	margin-right: 65px;
+	
 }
 .main-header a {
 	color: white;
@@ -798,6 +799,8 @@ input[type="radio"]:checked + .radio-psev::before {
 	color: white;
 	background-color: #070707;
 	font-weight: normal;
+	outline: none;
+	border: none;
 }
 /* For correct style change, input placeholders , in all br */ 
 input { 
@@ -822,12 +825,7 @@ input::-moz-placeholder {
 .breadcrumbs .active {
 	color: #aba9a7;
 }
-.item-page .main-menu li:first-child,
-.shop-page .main-menu li:first-child,
-.price-page .main-menu li:first-child {
-	margin-right: 30px;
-	margin-left: 20px;
-}
+
 
 
 
