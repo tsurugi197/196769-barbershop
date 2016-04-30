@@ -680,6 +680,7 @@ input[type="radio"]:checked + label::before {
   margin-bottom: 10px;
 }
 .item-article {
+  float: right;
   display: inline-block;
   color: #aeaeae;
 }
