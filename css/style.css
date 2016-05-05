@@ -453,8 +453,9 @@ input[type="checkbox"]:checked + label::before {
 .filters-form label:hover {
   color: #8d6e50;
 }
-input[type="checkbox"]:disabled + label {
-  color: #adaba9;
+input[type="checkbox"]:disabled + label,
+input[type="checkbox"]:disabled + label::before {
+  opacity: 0.3;
 }
 .filters-form fieldset {
   margin: 0 0;
