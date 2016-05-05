@@ -457,6 +457,10 @@ input[type="checkbox"]:disabled + label,
 input[type="checkbox"]:disabled + label::before {
   opacity: 0.3;
 }
+input[type="checkbox"]:disabled + label:hover {
+  color: #000000;
+  opacity: 0.3;
+}
 .filters-form fieldset {
   margin: 0 0;
   margin-bottom: 20px;
@@ -482,6 +486,14 @@ input[type="checkbox"]:disabled + label::before {
 input[type="radio"]:checked + label::before {
   background: url('../img/sprite.png') no-repeat ;
   background-position: -5px -347px;
+}
+input[type="radio"]:disabled + label,
+input[type="radio"]:disabled + label::before {
+  opacity: 0.3;
+}
+input[type="radio"]:disabled + label:hover {
+  color: #000000;
+  opacity: 0.3;
 }
 .filters-form .btn {
   margin: 0 0; 
